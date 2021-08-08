@@ -1,5 +1,4 @@
 import React from "react";
-
 import NoPayType from "./NoPayType";
 import CreditCardPayType from "./CreditCardPayType";
 import CheckPayType from "./CheckPayType";
@@ -8,10 +7,10 @@ import PurchaseOrderPayType from "./PurchaseOrderPayType";
 class PayTypeSelector extends React.Component {
   constructor(props) {
     super(props);
-    this.onPayTypeSelected = this.onPayTypeSelected.bind(this);
     this.state = {
-      selectedPayType: nil,
+      selectedPayType: null,
     };
+    this.onPayTypeSelected = this.onPayTypeSelected.bind(this);
   }
 
   onPayTypeSelected(event) {
